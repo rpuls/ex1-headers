@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Hello World!</h1><br>
+        <p>test method "post" (this form redirects to the next exercise "headers")</p>
+        <form action="NewServlet" method="post">
+            <input type="text" name="name" placeholder="name"/>
+            <input type="text" name="last name" placeholder="last name"/>
+            <input type="hidden" name="hidden" value="12345678"/>
+            <button type="submit" >submit</button>
+        </form>
+        <br>
+
+        <p>test method "get"</p>
+        <form action="#" method="get">
+            <input type="text" name="name" placeholder="name"/>
+            <input type="text" name="last name" placeholder="last name"/>
+            <input type="hidden" name="hidden" value="12345678"/>
+            <button type="submit" >submit</button>
+        </form>
+        <br>
+        
+
+    </body>
+
+    <!--
+    forskel på get og post
+       
+    post: will be resubmitted if page are reloaded, is not cached, parameters is not visible in url, cant be bookmarked, allowed both ASCII and binary data.
+    get: no effect when reload page, is cached, parameters vill be showed in url, can be bookmarked, only ASCII caracters allowed and max length of 2048 chars
+    source: http://www.w3schools.com/tags/ref_httpmethods.asp 
+    -->
+</html>
